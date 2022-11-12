@@ -1,0 +1,814 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.porshin {
+  flex: 1;
+}
+
+.ikkidanbir {
+  width: 50%;
+}
+
+.uchdanbir {
+  width: 33%;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header#tepa {
+  background: linear-gradient(102.87deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%);
+  position: relative;
+}
+header#tepa::before {
+  position: absolute;
+  width: 635px;
+  height: 635px;
+  left: -164.33px;
+  top: -597px;
+  content: "";
+  background: #F7DBA7;
+  border-radius: 99px;
+  transform: rotate(25.23deg);
+}
+header#tepa .container {
+  padding: 2em 0;
+}
+header#tepa .container .logo {
+  width: 115px;
+  height: 40px;
+  position: relative;
+}
+header#tepa .container .logo ::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 500px;
+  height: 100px;
+}
+header#tepa .container .dropdown {
+  z-index: 999;
+}
+header#tepa .container .nav-main {
+  z-index: 999;
+  margin-left: auto;
+  gap: 3em;
+}
+header#tepa .container .nav-main ul {
+  gap: 5em;
+  align-items: center;
+}
+header#tepa .container .nav-main ul li {
+  color: #003459;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+header#tepa .container .nav-main ul li:hover {
+  border-bottom: 1.5px solid #eec476;
+  color: #eec476;
+}
+header#tepa .container .nav-main .lup {
+  opacity: 0.6;
+  font-size: 1.3em;
+  transform: translateX(1.8em) translateY(0.7em);
+}
+header#tepa .container .nav-main .search {
+  padding: 0em 2em;
+  padding-left: 3em;
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 46px;
+  font-weight: 500;
+  font-size: 16px;
+}
+header#tepa .container .nav-main select {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-2, .btn-1 {
+  background: #003459;
+  padding: 14px 28px 10px;
+  border-radius: 57px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-1 {
+  color: white;
+  padding: 14px 38px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+.btn-1:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.btn-2 {
+  color: #003459;
+  background-color: transparent;
+  border: 1px solid #003459;
+  padding: 14px 38px;
+  transition: all 0.4s;
+}
+.btn-2:hover {
+  color: white;
+  background-color: #003459;
+}
+
+section#Banner {
+  background: linear-gradient(102.87deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%);
+  z-index: 999;
+  overflow: hidden;
+}
+section#Banner .grid {
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+section#Banner .grid .porshin {
+  color: #003459;
+  overflow: hidden;
+  z-index: 9999;
+}
+section#Banner .grid .porshin h1 {
+  font-weight: 800;
+  line-height: 68px;
+  font-size: 60px;
+  z-index: 1;
+}
+section#Banner .grid .porshin h1 span {
+  font-weight: 700;
+  font-size: 50px;
+}
+section#Banner .grid .porshin p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  width: 480px;
+  margin: 1.6em 0em;
+}
+section#Banner .grid .porshin .flex {
+  gap: 1.3em;
+}
+section#Banner .grid .porshin img {
+  width: 100%;
+  height: 493px;
+  z-index: 99;
+  overflow: hidden;
+  background-size: 35em;
+  background-repeat: no-repeat;
+  background-image: url(/img/Shapes/showcase-7.svg), url(/img/Shapes/showcase-5.svg);
+  background-position: 2em 2em;
+}
+
+section#Frame .container {
+  padding-top: 5em;
+  justify-content: center;
+  gap: 50em;
+}
+section#Frame .container .text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 44px;
+}
+section#Frame .container .text h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #003459;
+}
+section#Frame .container .btn-2 {
+  margin-left: auto;
+  margin-top: 1.3em;
+}
+
+section#Frame2 .container {
+  margin-top: 2.5em;
+  justify-content: center;
+  gap: 5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+section#Frame2 .container .card {
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 8px 8px 20px 8px;
+  flex-direction: column;
+  gap: 8px;
+  border: 5px solid transparent;
+}
+section#Frame2 .container .card:hover {
+  box-shadow: 0px 4px 28px 22px rgba(0, 0, 0, 0.08);
+  border: 5px solid #fceed5;
+}
+section#Frame2 .container .card img {
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+section#Frame2 .container .card p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #667479;
+}
+section#Frame2 .container .card h3 {
+  font-weight: 700;
+  font-size: 18px;
+  width: 250px;
+}
+section#Frame2 .container .card .flex {
+  background: #fceed5;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+section#Frame2 .container .card .flex span {
+  font-weight: 700;
+  font-size: 16px;
+}
+section#Frame2 .container .card .flex img {
+  width: 1.8em;
+  margin: 0;
+}
+
+section#Banner2 .container {
+  background: #003459;
+  border-radius: 8px;
+  margin: 4em auto;
+  margin-bottom: 0;
+  grid-template-columns: 1fr 1fr;
+}
+section#Banner2 .container .porshin {
+  text-align: end;
+}
+section#Banner2 .container .porshin:nth-child(2) {
+  background-image: url(/img/Shapes/Rectangle2.png);
+  background-repeat: no-repeat;
+  background-size: 45em 25em;
+  z-index: 999;
+}
+section#Banner2 .container .porshin img {
+  margin-right: 12em;
+  background-position: 0em 12em;
+  background-repeat: no-repeat;
+  background-image: url(/img/Shapes/Rectangle1.png);
+  background-size: 80em 30em;
+}
+section#Banner2 .container .porshin h2 {
+  font-weight: 800;
+  line-height: 68px;
+  font-size: 60px;
+  z-index: 1;
+  width: 580px;
+}
+section#Banner2 .container .porshin h2 span {
+  font-weight: 700;
+  font-size: 50px;
+}
+section#Banner2 .container .porshin p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  width: 480px;
+  margin: 1.6em auto;
+}
+section#Banner2 .container .porshin .flex {
+  gap: 1.3em;
+  justify-content: center;
+  padding-left: 10em;
+}
+
+section#Frame3 .container .grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+section#Banner3 .container {
+  background: #ffb775;
+  border-radius: 18px;
+  margin-top: 5em;
+}
+section#Banner3 .grid {
+  grid-template-columns: 1fr 1fr;
+}
+section#Banner3 .grid .porshin {
+  color: #003459;
+}
+section#Banner3 .grid .porshin:nth-child(1) {
+  background-image: url(/img/Shapes/Rectangle3.png);
+  background-repeat: no-repeat;
+  background-position: 0em 0em;
+  background-size: 40em 35em;
+}
+section#Banner3 .grid .porshin .flex img {
+  width: 55px;
+  height: 45px;
+  margin-top: 8.2em;
+}
+section#Banner3 .grid .porshin h1 {
+  margin-top: 2em;
+  font-weight: 800;
+  line-height: 68px;
+  font-size: 60px;
+  z-index: 1;
+}
+section#Banner3 .grid .porshin span {
+  font-weight: 700;
+  font-size: 40px;
+  padding-left: 3em;
+}
+section#Banner3 .grid .porshin p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  width: 480px;
+  margin: 1.6em auto;
+  padding-left: 0.53em;
+}
+section#Banner3 .grid .porshin .flex {
+  gap: 1.3em;
+  padding-left: 7.5em;
+}
+section#Banner3 .grid .porshin img {
+  width: 100%;
+  height: 493px;
+}
+
+section#Frame4 .container {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 3em;
+}
+section#Frame4 .container .card {
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 8px 8px 20px 8px;
+  flex-direction: column;
+  gap: 16px;
+  border: 5px solid transparent;
+}
+section#Frame4 .container .card:hover {
+  box-shadow: 0px 4px 28px 22px rgba(0, 0, 0, 0.08);
+  border: 5px solid #fceed5;
+}
+section#Frame4 .container .card h4 {
+  background: #00a7e7;
+  border-radius: 28px;
+  padding: 2px 10px;
+  width: 139px;
+  color: white;
+}
+section#Frame4 .container .card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #00171f;
+  width: 398px;
+}
+section#Frame4 .container .card p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #242b33;
+  width: 418px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+footer {
+  padding-top: 5em;
+  background: linear-gradient(102.87deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%);
+}
+footer .con1 {
+  padding: 2em;
+  background: #003459;
+  border-radius: 1em;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+}
+footer .con1 p {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  width: 400px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+footer .con1 form {
+  background: #fdfdfd;
+  padding: 1em;
+  border-radius: 1em;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+}
+footer .con1 form input {
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+footer .con1 form button {
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+footer .con2 {
+  grid-template-columns: 6fr 1fr;
+  padding: 2em 0;
+}
+footer .con2 .uchdanbir {
+  gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .con2 .uchdanbir ul {
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+}
+footer .con2 .uchdanbir ul li {
+  font-weight: 500;
+  font-size: 17px;
+  color: #003459;
+  transition: all 0.3s;
+}
+footer .con2 .uchdanbir ul li:hover {
+  color: #ffb775;
+}
+footer .con2 .uchdanbir i {
+  font-size: 1.5em;
+  transition: all 0.3s;
+}
+footer .con2 .uchdanbir i:hover {
+  color: #003459;
+}
+footer .con3 {
+  padding: 2em 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 21em;
+}
+footer .uchdanbir {
+  grid-template-columns: 1fr 1fr;
+  width: 33%;
+}
+.load{
+   position: fixed;
+  inset: 0;
+  background-color: #fff;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  animation: load 1s linear 3s 1 forwards;
+}
+.laoding{
+  width: 100px;
+  height: 100px;
+  border: 15px dashed black;
+  border-radius: 50%;
+  animation: laoding 1.5s linear infinite;
+}
+@keyframes load{
+  to{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes laoding{
+     to{
+      transform: rotate(360deg);
+     }
+}
+
+@media (min-width: 1400px) {
+  .container .drop {
+    display: none;
+  }
+  .container .drop2 {
+    display: none;
+  }
+  section#Frame .lg{
+    display: none;
+  }
+}
+@media (max-width: 1410px) {
+  .container {
+    width: 1000px;
+  }
+  .container .drop {
+    display: none;
+  }
+  .container .drop2 {
+    display: none;
+  }
+  section#Frame2 .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section#Frame .container {
+    gap: 25em;
+  }
+  section#Frame .lg{
+    display: none;
+  }
+}
+@media (max-width: 1010px) {
+  .container {
+    width: 710px;
+    padding: 1em;
+  }
+  header#tepa .container {
+    gap: 0;
+  }
+  header#tepa .logo {
+    margin: 0 auto;
+  }
+  header#tepa .drop {
+    font-size: 2em;
+    position: absolute;
+    right: 20em;
+    display: block;
+  }
+  header#tepa .drop2 {
+    font-size: 2em;
+    position: absolute;
+    left: 20em;
+    display: block;
+  }
+  header#tepa .nav-main-2 {
+    position: absolute;
+    width: 70%;
+    background: #00a7e7;
+    z-index: 999;
+    height: 60em;
+    top: -1000px;
+    left: 0em;
+    flex-direction: column;
+    padding: 2em 4em;
+  }
+  header#tepa .nav-main-2:target {
+    top: 0px;
+  }
+  header#tepa .nav-main input {
+    height: 50px;
+    width: 230px;
+    padding-left: 5em;
+  }
+  header#tepa .nav-main select {
+    width: 3em;
+    display: none;
+  }
+  header#tepa .nav-main .btn-1 {
+    background: #f7dba7;
+    height: 50px;
+    margin-left: 1.5em;
+    width: 230px;
+    
+  }
+  header#tepa .nav-main ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+  header#tepa .nav-main li {
+    color: red;
+    margin: 0;
+    padding: 0;
+  }
+  section#Frame .lg{
+    display: none;
+  }
+  section#Frame .none{
+    display: none;
+    background-color: red;
+  }
+  section#Banner .grid {
+    grid-template-columns: 1fr;
+  }
+  section#Banner .grid .porshin {
+    z-index: 1;
+  }
+  section#Banner .grid .porshin h1 {
+    font-size: 3em;
+    margin-left: 2em;
+  }
+  section#Banner .grid .porshin h1 span {
+    font-size: 0.8em;
+  }
+  section#Banner .grid .porshin p {
+    margin-left: 6em;
+  }
+  section#Banner .grid .porshin .flex {
+    margin-left: 6em;
+  }
+  section#Banner2 .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  section#Banner2 .container .porshin .flex {
+    margin-bottom: 1em;
+  }
+  section#Banner3 {
+    display: none;
+  }
+  
+  section#Frame .container {
+    gap: 4em;
+  }
+  section#Frame2 .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  section#Frame3 {
+    display: none;
+  }
+  section#Frame4 .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  section#Frame4 .container .card {
+    width: 480px;
+  }
+  footer .con1 {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  footer .con1 p {
+    width: 540px;
+  }
+  footer .con1 form {
+    grid-template-columns: 1fr;
+  }
+  footer .con2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2em;
+  }
+  footer .con2 .uchdanbir ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7em;
+    margin-left: -10em;
+  }
+  footer .con3 {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    grid-template-areas: 1em;
+  }
+}
+@media (max-width: 710px) {
+  .container {
+    width: 100%;
+    padding: 0 1em;
+  }
+  header#tepa::before{
+    position: absolute;
+    left: -35em;
+  }
+  header#tepa .nav-main-2{
+    width: 100%;
+    
+  }
+  header#tepa .container .drop {
+    display: block;
+    font-size: 1.8em;
+    left: 1em;
+  }
+  header#tepa .container .drop2 {
+    display: block;
+    font-size: 1.8em;
+    left: 12em;
+    position: absolute;
+  }
+  section#Banner .container{
+    padding: 0;
+    padding-left: 1em;
+  }
+section#Banner .grid .porshin h1{
+    margin: 0;
+    line-height: 1.2em;
+    font-size: 2.5em;
+  }
+  section#Banner .grid .porshin p{
+    margin:1em 0;
+    width: 350px;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  section#Banner .grid .porshin img{
+    width: 100%;
+    height: 300px;
+  }
+  section#Banner .grid .porshin .flex{
+    margin: 0;
+    gap: 0.5em;
+  }
+  section#Banner2 .container .porshin{
+     text-align: center;
+  }
+  section#Banner2 .container .porshin:nth-child(2){
+    background-image: url(/img/Shapes/Rectangle4.png);
+    background-size: 26em 24em;
+  }
+  section#Banner2 .container .porshin .flex{
+    padding-left: 0;
+  }
+  section#Banner2 .container .porshin h2{
+    width: 360px;
+    font-size: 2em;
+    line-height: 35px;
+    padding-top: 2em;
+  }
+  section#Banner2 .container .porshin p{
+    width: 360px;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  section#Banner2 .container .porshin h2 span{
+    font-size: 0.8em;
+  }
+  section#Frame .lg{
+    display: block;
+    text-align: center;
+  }
+  section#Frame .none2 .btn-2{
+    display: none;
+  }
+  section#Frame .none1 .text{
+    display: none;
+  }
+  section#Frame2 .none{
+    display: none;
+  }
+  section#Frame2 .container {
+    gap: 0;
+  }
+  section#Frame2 .container .card {
+    width: 200px;
+  }
+  section#Frame2 .container .card h3 {
+    width: 160px;
+    font-size: 14px;
+  }
+  section#Frame4 .container .card {
+    width: 400px;
+  }
+  section#Frame4 .container .card p {
+    width: 380px;
+  }
+  section#Frame4 .container .card h3 {
+    width: 360px;
+  }
+    section#Banner2 .container {
+      display: flex;
+      flex-direction: column-reverse;
+      
+    }
+  section#Banner2 .container .porshin img{
+    margin: 0;
+  }
+  footer .container{
+    padding: 1;
+  }
+  footer .container .con1 {
+    padding: 1em;
+  }
+  footer .container .con1 p {
+    font-size: 18px;
+    width: 340px;
+  }
+  footer .container .con1 form {
+    width: 100%;
+  }
+  footer .container .grid .icon{
+    margin-left: -4em;
+  }
+  footer .container .con2 ul {
+    gap: 1em;
+    margin-left: -5em;
+  }
+}/*# sourceMappingURL=style.css.map */

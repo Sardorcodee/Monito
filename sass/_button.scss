@@ -1,0 +1,33 @@
+$asosiy:red;
+%button {
+  background: red;
+  padding: 14px 28px 10px;
+  border-radius: 57px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-1 {
+  @extend %button;
+  color: white;
+  padding: 14px 38px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  &:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+}
+.btn-2 {
+  @extend %button;
+  color: $asosiy;
+  background-color: transparent;
+  border: 1px solid $asosiy;
+  padding: 14px 38px;
+  transition: all 0.4s;
+  &:hover {
+    color: white;
+    background-color: $asosiy;
+  }
+}
